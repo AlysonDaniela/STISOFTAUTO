@@ -1,0 +1,1 @@
+<?php ?><header class="px-6 py-3 bg-white border-b border-gray-200 flex items-center justify-between"><div class="font-semibold">Bridge Vacaciones (estricto)</div><div class="text-sm text-gray-500">Usuario: demo</div></header>

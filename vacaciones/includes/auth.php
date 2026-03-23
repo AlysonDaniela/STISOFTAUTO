@@ -1,0 +1,1 @@
+<?php function require_auth(){} function current_user(){return ['name'=>'demo'];} ?>

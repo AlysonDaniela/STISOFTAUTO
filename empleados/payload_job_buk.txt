@@ -1,0 +1,8 @@
+{ "company_id": 1, 
+"location_id": 407, 
+"employee_id": 764, 
+"area_id": 338, 
+"role_id": 368, 
+"leader_id": 313, 
+"start_date": "2008-05-23", 
+"salary": { "base_salary": 0, "currency": "CLP", "period": "mensual" } }

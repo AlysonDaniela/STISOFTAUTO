@@ -1,0 +1,74 @@
+vendor/
+node_modules/
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+config.json
+sync/storage/sync/config.json
+
+# Runtime logs and diagnostics
+*.log
+error_log
+logs/
+logs_php/
+storage/logs/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+
+# Generic temporary data
+tmp_uploads/
+cache_csv/
+
+# Generated or uploaded runtime files
+storage/descargas/
+storage/sftp_inbox/
+sync/storage/backups/
+sync/storage/descargas/
+sync/storage/reports/
+sync/storage/sync/latest_*.json
+sync/storage/sync/users.json
+
+# Buk / process logs
+bajas/logs_buk_terminate/*.json
+documentos/logs_buk_docs/*.json
+empleados/logs_buk/*.json
+empleados/logs_buk_terminate/*.json
+sindicato/logs_buk_attr_file/*.json
+vacaciones/logs_buk_vacaciones/*.json
+vacaciones/logs_vac/*.json
+
+# Liquidaciones runtime artifacts
+rliquid/vendor/
+rliquid/cache_csv/
+rliquid/cache_csv_liq/
+rliquid/cache_liquidaciones/
+rliquid/logs_buk_liq/
+rliquid/tmp_liq/
+rliquid/tmp_pdfs_liq/
+rliquid/tmp_uploads/
+rliquid/tmp_uploads_liq/
+rliquid/tmp_uploads_term/
+
+# Keep folder placeholders when needed
+!**/.htaccess
+
+# Accidental scratch files seen in this workspace
+/Body
+/CharSet
+/Host
+/Password
+/SMTPAuth
+/SMTPSecure
+/Subject
+/Username
+/[[]#dcfce7,
+/[[]#e5e7eb,
+/[[]#fee2e2,
+/[[]#fef3c7,
+/[[]duration]
+/[[]message]
+/[[]mode]

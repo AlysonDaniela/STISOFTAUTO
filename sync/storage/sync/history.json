@@ -1,0 +1,956 @@
+[
+    {
+        "date": "2026-03-06 08:00:01",
+        "mode": "sftp",
+        "status": "ERROR",
+        "files": 0,
+        "duration": "7 ms",
+        "message": "SFTP requiere phpseclib. No se encontró vendor/autoload.php",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-06 09:36:19",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 704,
+        "duration": "802.73 s",
+        "message": "SFTP OK. Archivos descargados: 704",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-06 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 0,
+        "duration": "10.68 s",
+        "message": "SFTP OK. Archivos descargados: 0",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-07 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "12.38 s",
+        "message": "SFTP OK. Archivos descargados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-08 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "11.79 s",
+        "message": "SFTP OK. Archivos descargados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-09 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "12.46 s",
+        "message": "SFTP OK. Archivos descargados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-10 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "12.41 s",
+        "message": "SFTP OK. Archivos descargados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-11 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "11.86 s",
+        "message": "SFTP OK. Archivos descargados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-12 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "12.33 s",
+        "message": "SFTP OK. Archivos descargados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-13 11:00:02",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "12.18 s",
+        "message": "SFTP OK. Archivos descargados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-14 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 67,
+        "duration": "90.95 s",
+        "message": "SFTP OK. Archivos descargados: 67",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-15 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 4,
+        "duration": "15.67 s",
+        "message": "SFTP OK. Archivos descargados: 4",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-16 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 11,
+        "duration": "24.63 s",
+        "message": "SFTP OK. Archivos descargados: 11",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-16 23:05:50",
+        "mode": "sftp",
+        "status": "ERROR",
+        "files": 0,
+        "duration": "230 ms",
+        "message": "",
+        "errors": "Cannot connect to 200.54.73.219:22. Error 111. Connection refused"
+    },
+    {
+        "date": "2026-03-17 11:00:01",
+        "mode": "sftp",
+        "status": "ERROR",
+        "files": 0,
+        "duration": "253 ms",
+        "message": "",
+        "errors": "Cannot connect to 200.54.73.219:22. Error 111. Connection refused"
+    },
+    {
+        "date": "2026-03-17 12:49:32",
+        "mode": "sftp",
+        "status": "ERROR",
+        "files": 0,
+        "duration": "13.74 s",
+        "message": "",
+        "errors": "extract_sync_result(): Argument #1 ($output) must be of type string, null given, called in /var/www/html/sync/run_sync.php on line 217"
+    },
+    {
+        "date": "2026-03-17 12:58:12",
+        "mode": "sftp",
+        "status": "ERROR",
+        "files": 0,
+        "duration": "13.78 s",
+        "message": "",
+        "errors": "extract_sync_result(): Argument #1 ($output) must be of type string, null given, called in /var/www/html/sync/run_sync.php on line 217"
+    },
+    {
+        "date": "2026-03-17 13:02:52",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 4,
+        "duration": "15.76 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 4",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 13:35:26",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 1,
+        "duration": "20.83 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 1",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 14:08:10",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.15 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 14:15:08",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 0,
+        "duration": "17.90 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 0",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 14:24:39",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 0,
+        "duration": "17.98 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 0",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 14:31:15",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "21.84 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 14:57:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.12 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 15:09:43",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.69 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 15:14:49",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.19 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 15:21:44",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.49 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 15:28:17",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "23.54 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 15:45:41",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "23.80 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:04:12",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.47 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:18:42",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "23.28 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:20:08",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.67 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:23:43",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.33 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:26:53",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.30 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:33:38",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.38 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:36:06",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.62 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:45:50",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.42 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:49:55",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.27 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:51:31",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.51 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:53:40",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.73 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 16:56:04",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.13 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 17:22:02",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "25.40 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 17:25:02",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.98 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 23:27:52",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.62 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 23:44:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 0,
+        "duration": "19.93 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 0",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-17 23:58:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.13 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 00:14:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.61 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 00:56:57",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.08 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 00:58:44",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "22.80 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 01:11:50",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "21.79 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 01:20:23",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "33.86 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 01:29:06",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "30.15 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 01:34:42",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "35.84 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 01:45:02",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "37.37 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 02:04:24",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "39.06 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 02:25:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "306.92 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 02:41:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "25.65 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 02:56:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.12 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 03:05:34",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "38.84 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 03:14:40",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "42.63 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 03:19:58",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "38.66 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 03:27:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "46.15 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 03:48:45",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "358.73 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 04:01:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "38.63 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 04:07:33",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "45.37 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 04:18:25",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "425.78 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 04:31:54",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "404.87 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 04:49:05",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "40.47 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 10:49:50",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "43.23 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 10:56:16",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "68.95 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 10:58:30",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "47.05 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "71.61 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 11:02:45",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.45 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 11:04:03",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "167.01 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 11:11:08",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "163.58 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 11:16:39",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "167.83 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 11:37:46",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "102.76 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 11:42:47",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "131.71 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 13:11:15",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "219.33 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 13:17:45",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "145.41 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 17:35:45",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.79 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 17:49:59",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.21 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-18 18:20:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.53 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-19 00:14:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.23 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-19 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "117.90 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-19 18:20:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "32.52 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-20 00:14:01",
+        "mode": "sftp",
+        "status": "ERROR",
+        "files": 0,
+        "duration": "29.12 s",
+        "message": "Error en ejecución de sync",
+        "errors": "Expected NET_SFTP_VERSION. Got packet type: "
+    },
+    {
+        "date": "2026-03-20 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "36.91 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-20 18:20:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.24 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-21 00:14:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.97 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-21 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.68 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-21 18:20:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.42 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 00:14:02",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.46 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 11:00:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "28.01 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 18:20:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "28.44 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 21:51:20",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.46 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 22:02:13",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.69 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 22:06:19",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "27.05 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 22:18:34",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.35 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 22:27:23",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "26.71 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 22:47:46",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 3,
+        "duration": "36.68 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 3",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 22:57:00",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "36.40 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-22 23:26:36",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "35.10 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-23 00:14:01",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "36.08 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-23 00:28:38",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "36.11 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    },
+    {
+        "date": "2026-03-23 00:32:22",
+        "mode": "sftp",
+        "status": "OK",
+        "files": 2,
+        "duration": "35.25 s",
+        "message": "SFTP OK. Archivos descargados/procesados: 2",
+        "errors": ""
+    }
+]

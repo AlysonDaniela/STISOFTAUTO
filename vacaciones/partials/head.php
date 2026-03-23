@@ -1,0 +1,1 @@
+<?php ?><!doctype html><html lang="es"><head><meta charset="utf-8"><title>Vacaciones Bridge</title><meta name="viewport" content="width=device-width,initial-scale=1"><script src="https://kit.fontawesome.com/a2e0e9e2d8.js" crossorigin="anonymous"></script><script src="https://cdn.tailwindcss.com"></script></head>

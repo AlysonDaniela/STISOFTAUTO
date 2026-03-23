@@ -1,0 +1,27 @@
+{
+  "smtp": {
+    "enabled": true,
+    "host": "SMTP_HOST",
+    "port": 587,
+    "username": "SMTP_USER",
+    "password": "SMTP_PASSWORD",
+    "from_address": "no-reply@example.com",
+    "from_name": "STISOFT Auto Sync",
+    "to_addresses": [
+      "admin@example.com"
+    ]
+  },
+  "db": {
+    "host": "localhost",
+    "user": "DB_USER",
+    "pass": "DB_PASSWORD",
+    "name": "DB_NAME"
+  },
+  "buk": {
+    "base_url": "https://sti.buk.cl/api/v1/chile",
+    "token": "BUK_TOKEN"
+  },
+  "retention": {
+    "rliquid_pdf_days": 90
+  }
+}

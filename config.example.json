@@ -1,0 +1,47 @@
+{
+  "mode": "sftp",
+  "sftp": {
+    "host": "SFTP_HOST",
+    "port": 22,
+    "username": "SFTP_USER",
+    "password": "SFTP_PASSWORD",
+    "remote_path": "/"
+  },
+  "smtp": {
+    "enabled": true,
+    "host": "SMTP_HOST",
+    "port": 587,
+    "username": "SMTP_USER",
+    "password": "SMTP_PASSWORD",
+    "from_address": "no-reply@example.com",
+    "from_name": "STISOFT Auto Sync",
+    "to_addresses": [
+      "admin@example.com"
+    ]
+  },
+  "db": {
+    "host": "localhost",
+    "user": "DB_USER",
+    "pass": "DB_PASSWORD",
+    "name": "DB_NAME"
+  },
+  "buk": {
+    "base_url": "https://sti.buk.cl/api/v1/chile",
+    "token": "BUK_TOKEN"
+  },
+  "schedule": {
+    "frequency": "daily",
+    "daily_time": "08:00",
+    "timezone": "America/Santiago",
+    "cron": "0 8 * * *"
+  },
+  "paths": {
+    "local_inbox": "./storage/sftp_inbox",
+    "download_dir": "./storage/descargas"
+  },
+  "runtime": {
+    "php_path": "/usr/bin/php",
+    "project_path": "/var/www/html/sync",
+    "log_file": "./storage/logs/sync.log"
+  }
+}
