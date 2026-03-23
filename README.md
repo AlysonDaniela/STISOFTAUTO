@@ -1,6 +1,16 @@
 # STISOFTAUTO
 
-Sistema web PHP para automatizar procesos operativos y de RR.HH. con Buk, incluyendo empleados, cambios, bajas, documentos, vacaciones y liquidaciones.
+Sistema web PHP para automatizar procesos operativos y de RR.HH. integrados con Buk: empleados, cambios, bajas, documentos, vacaciones y liquidaciones.
+
+## Resumen rapido
+
+- Stack principal: PHP + MySQL/MariaDB + Composer
+- Punto de entrada web: `index.php`
+- Modulo mas sensible: `rliquid/`
+- Configuracion privada: `config.json` y `sync/storage/sync/config.json`
+- Dependencias separadas:
+  - raiz del proyecto: PHPMailer, phpseclib
+  - `rliquid/`: FPDF, FPDI, PhpSpreadsheet
 
 ## Requisitos
 
@@ -8,7 +18,7 @@ Sistema web PHP para automatizar procesos operativos y de RR.HH. con Buk, incluy
 - PHP 8.1 o superior
 - MySQL o MariaDB
 - Composer 2
-- Extensiones PHP habituales para este proyecto:
+- Extensiones PHP:
   - `mysqli`
   - `curl`
   - `mbstring`
@@ -17,63 +27,77 @@ Sistema web PHP para automatizar procesos operativos y de RR.HH. con Buk, incluy
   - `xml`
   - `gd`
 
-## Estructura general
+## Estructura
 
 - `index.php`, `empleados/`, `cambios/`, `bajas/`, `vacaciones/`, `documentos/`: modulos principales
-- `rliquid/`: modulo de liquidaciones y generacion de PDFs
-- `conexion/`: conexion a base de datos
+- `rliquid/`: lotes de liquidaciones, generacion de PDFs y envio a Buk
+- `conexion/`: acceso a base de datos
 - `includes/` y `partials/`: autenticacion, layout y componentes compartidos
-- `sync/`: procesos automaticos, almacenamiento y reportes
+- `sync/`: automatizaciones, almacenamiento y reportes
+- `docs/`: documentacion operativa para onboarding y mantenimiento
 
-## Instalacion
-
-### 1. Clonar el proyecto
+## Quick Start
 
 ```bash
 git clone <URL_DEL_REPOSITORIO> /var/www/html
 cd /var/www/html
+composer install
+cd /var/www/html/rliquid
+composer install
 ```
 
-### 2. Instalar dependencias PHP del proyecto base
+Luego:
+
+1. Copiar `config.example.json` a `config.json`.
+2. Copiar `sync/storage/sync/config.example.json` a `sync/storage/sync/config.json`.
+3. Completar `conexion/db.php`.
+4. Asegurar permisos de escritura en carpetas runtime.
+5. Abrir el sistema en el navegador y validar login, base de datos y Buk.
+
+## Instalacion
+
+### 1. Dependencias PHP
+
+Proyecto base:
 
 ```bash
 composer install
 ```
 
-### 3. Instalar dependencias del modulo `rliquid`
+Modulo de liquidaciones:
 
 ```bash
 cd /var/www/html/rliquid
 composer install
 ```
 
-### 4. Configurar conexion a base de datos
+### 2. Base de datos
 
-Editar el archivo:
+Editar:
 
 - `conexion/db.php`
 
-Debes completar alli las credenciales del servidor MySQL/MariaDB y verificar que exista la clase `clsConexion`.
+Debes completar las credenciales del servidor MySQL/MariaDB y verificar que la clase `clsConexion` quede operativa.
 
-### 5. Configurar archivos sensibles
+### 3. Archivos sensibles
 
 Este repositorio no versiona credenciales reales. Usa estos archivos como base:
 
-- Copiar `config.example.json` a `config.json`
-- Copiar `sync/storage/sync/config.example.json` a `sync/storage/sync/config.json`
+- `config.example.json` -> `config.json`
+- `sync/storage/sync/config.example.json` -> `sync/storage/sync/config.json`
 
-Luego completar:
+Debes completar al menos:
 
-- credenciales SFTP
-- credenciales SMTP
+- SMTP
+- SFTP
 - credenciales de base de datos
 - token y URL base de Buk
-- rutas locales del servidor
-- retencion de PDFs de liquidaciones
+- rutas locales
+- retencion de PDFs de `rliquid`
 
-### 6. Permisos de escritura
+### 4. Permisos de escritura
 
-El usuario del servidor web debe poder escribir en estas carpetas:
+El usuario del servidor web debe poder escribir en:
 
 - `storage/`
 - `sync/storage/`
@@ -95,79 +119,96 @@ sudo chown -R www-data:www-data /var/www/html
 sudo find /var/www/html -type d -exec chmod 775 {} \;
 ```
 
-Ajusta el usuario `www-data` si tu servidor usa otro.
+Ajusta `www-data` si tu servidor usa otro usuario.
 
-### 7. Configurar Apache / Nginx
+### 5. Servidor web
 
-Apuntar el document root a:
+Apunta el `document root` a:
 
 ```text
 /var/www/html
 ```
 
-Si usas Apache, habilita `mod_rewrite` si el proyecto lo necesita y permite leer `.htaccess`.
+Si usas Apache, habilita `mod_rewrite` si aplica y permite leer `.htaccess`.
 
-### 8. Verificar Composer en produccion
+## Configuracion esperada
 
-Confirma que existan estas carpetas:
+### `config.json`
 
-- `vendor/`
-- `rliquid/vendor/`
+Configuracion general del proyecto y del proceso de sincronizacion:
 
-Si faltan, el proyecto no podra cargar PHPMailer, phpseclib, FPDF o PhpSpreadsheet.
+- modo de lectura
+- acceso SFTP
+- SMTP
+- base de datos
+- Buk
+- scheduler
+- rutas locales
 
-## Puesta en marcha
+### `sync/storage/sync/config.json`
 
-1. Abrir el sistema en el navegador.
-2. Iniciar sesion.
-3. Verificar acceso a base de datos.
-4. Revisar que la configuracion SMTP y SFTP sea correcta.
-5. Probar primero los modulos principales.
-6. Probar `rliquid/` subiendo un archivo de ejemplo.
+Configuracion usada por runtime y reportes:
 
-## Modulo de liquidaciones
+- SMTP
+- base de datos
+- Buk
+- retencion de PDFs de liquidaciones
 
-El modulo `rliquid`:
+## Modulo `rliquid`
+
+El modulo de liquidaciones:
 
 - recibe archivos CSV o XLSX
-- convierte el origen a CSV si corresponde
-- genera PDFs por trabajador
+- convierte XLSX a CSV si corresponde
+- resume netos por trabajador
 - cruza datos con `adp_empleados`
+- genera PDFs por colaborador
 - envia documentos a Buk
-- guarda corridas, estados y resumen por correo
+- registra corridas, estado y resumen por correo
 
-Para funcionar correctamente necesita:
+Para operar necesita:
 
 - `rliquid/vendor/autoload.php`
-- acceso de escritura en `rliquid/tmp_liq/`
-- configuracion SMTP activa en `sync/storage/sync/config.json`
+- escritura en `rliquid/tmp_liq/`
+- SMTP activo en `sync/storage/sync/config.json`
 - acceso a la tabla `adp_empleados`
+
+Notas importantes:
+
+- parte de sus tablas auxiliares se crean automaticamente
+- depende de datos historicos y maestros que no se crean solos
+- si falta `buk_emp_id`, el PDF puede generarse pero el envio no ocurrira
 
 ## Base de datos
 
-Algunas tablas se crean automaticamente desde el codigo, por ejemplo en `rliquid/index.php`, pero el sistema tambien depende de tablas de negocio ya existentes, como:
+Antes de usar el sistema en un servidor nuevo, valida:
 
-- `adp_empleados`
-- tablas historicas y operativas del resto de modulos
-
-Antes de usar el sistema en un servidor nuevo, valida que la base este cargada y que el usuario MySQL tenga permisos de lectura y escritura.
+- que exista la base operativa completa
+- que el usuario MySQL tenga permisos de lectura y escritura
+- que la tabla `adp_empleados` tenga datos vigentes
 
 ## Seguridad
 
 - No subir credenciales reales al repositorio.
-- No versionar archivos generados, logs, PDFs ni cargas de usuarios.
-- Cambiar contrasenas si alguna vez estuvieron expuestas fuera del servidor.
-- Mover tokens y credenciales a configuracion privada siempre que sea posible.
+- No versionar logs, PDFs, cargas ni archivos runtime.
+- Rotar secretos si alguna vez se expusieron fuera del servidor.
+- Mantener tokens y claves solo en configuracion privada.
 
-## Git recomendado
+## Git y limpieza local
 
-Este repositorio esta preparado para versionar codigo y excluir:
+El repositorio ya ignora:
 
 - logs
-- archivos temporales
+- temporales
 - PDFs generados
-- archivos cargados por usuarios
+- cargas de usuarios
 - configuraciones con secretos
+- varios archivos basura detectados en esta workspace
+
+Documentacion extra:
+
+- `docs/ONBOARDING.md`
+- `docs/WORKSPACE_CLEANUP.md`
 
 ## Comandos utiles
 
@@ -183,18 +224,16 @@ Instalacion de `rliquid`:
 cd /var/www/html/rliquid && composer install
 ```
 
-Revisar sintaxis de un archivo PHP:
+Validar sintaxis:
 
 ```bash
 php -l rliquid/index.php
+php -l includes/runtime_config.php
 ```
 
-## Siguiente paso sugerido
+Verificar estado Git:
 
-Cuando la configuracion este lista:
-
-1. crear el commit inicial
-2. vincular o confirmar `origin`
-3. hacer push a `main`
-
-Si quieres, en el siguiente paso tambien te dejo hecho el commit inicial y el `push --force` para que GitHub quede sobreescrito desde este estado limpio.
+```bash
+git status
+git log --oneline -n 5
+```
